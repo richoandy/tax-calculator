@@ -1,0 +1,22 @@
+[
+  {
+    "name": "food",
+    "price": 100,
+    "tax_code": "1"
+  },
+  {
+    "name": "smoke",
+    "price": 1000,
+    "tax_code": "2"
+  },
+  {
+    "name": "movie",
+    "price": 10,
+    "tax_code": "3"
+  },
+  {
+    "name": "music",
+    "price": 1000,
+    "tax_code": "3"
+  }
+]

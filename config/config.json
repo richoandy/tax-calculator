@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "user",
+    "password": "user",
+    "database": "tax_calc_dev",
+    "host": "db",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "tax_calc_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:9.5
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+      POSTGRES_DB: tax_calc_dev
+  migration:
+    restart: "on-failure"
+    image: richoandy/tax-calculator
+    depends_on:
+      - db
+    links:
+      - db
+    command: ["npm", "run", "migrate"]
+  app:
+    image: richoandy/tax-calculator
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - db
+    links:
+      - db
+      
